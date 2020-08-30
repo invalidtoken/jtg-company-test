@@ -2,6 +2,7 @@
 /* Navbar */
 
 body {
+  font-family: Arial, Helvetica, sans-serif;
   padding: 0px;
   background-image: url(/img/main_bg.jpg);
   margin: 0px;
@@ -48,12 +49,18 @@ header {
 
 .nav-list-item {
   letter-spacing: 1px;
-  font-family: Arial, Helvetica, sans-serif;
   color: gray;
   margin-bottom: 20px;
 }
 
+main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 #parent-slider {
+  width: 75.5%;
   position: relative;
   margin-top: 89px;
 }
@@ -65,9 +72,32 @@ header {
 }
 
 .slider-item img {
+  width: 100%;
+}
+
+.b-1px-solid {
   border: 1px solid lightgray;
 }
 
 .slider-controls div {
   display: inline;
+}
+
+section {
+  margin-top: 15px;
+  box-sizing: border-box;
+  width: 75.5%;
+  padding: 20px;
+}
+
+.section-heading {
+  color: green;
+  font-weight: 400;
+  padding: 0px;
+  margin: 0px;
+  font-size: 18px;
+  margin-left: 5px;
+  margin-top: 6px;
+  padding: 3px;
+  border-bottom: 1px solid green;
 }
