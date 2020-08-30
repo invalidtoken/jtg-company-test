@@ -1,0 +1,73 @@
+/* Header */
+/* Navbar */
+
+body {
+  padding: 0px;
+  background-image: url(/img/main_bg.jpg);
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#navbar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  background-image: url("/img/header_bg01.png");
+  background-size: cover;
+  height: 100px;
+  display: flex;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  z-index: 2;
+}
+
+#logo-container {
+  margin-left: 139px;
+}
+
+.nav-list {
+  width: 55%;
+  margin: 0px;
+  display: flex;
+  list-style: none;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  margin-left: 15px;
+  padding: 0px;
+  font-size: 14px;
+}
+
+.nav-list-item {
+  letter-spacing: 1px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: gray;
+  margin-bottom: 20px;
+}
+
+#parent-slider {
+  position: relative;
+  margin-top: 89px;
+}
+
+.slider-controls {
+  position: absolute;
+  bottom: 9px;
+  right: 7px;
+}
+
+.slider-item img {
+  border: 1px solid lightgray;
+}
+
+.slider-controls div {
+  display: inline;
+}
