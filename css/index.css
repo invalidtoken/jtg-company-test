@@ -19,6 +19,7 @@ header {
 }
 
 #navbar {
+  width: 100vw;
   position: fixed;
   top: 0px;
   left: 0px;
@@ -105,9 +106,9 @@ section {
   color: green;
   font-weight: 400;
   font-size: 18px;
-  margin-left: 5px;
+  margin: 0px 8px;
   margin-top: 6px;
-  padding: 3px;
+  padding: 3px 0px;
   border-bottom: 1px solid green;
 }
 
@@ -214,4 +215,152 @@ section {
 
 #news-div {
   width: 33%;
+}
+
+.customer-div-content p {
+  font-size: 12px;
+  line-height: 20px;
+  margin: 20px 0px 8px 8px;
+  color: gray;
+  margin-left: 8px;
+}
+
+.customer-div-content p a,
+.news-item p a {
+  margin-left: 10px;
+  color: green;
+}
+
+.customer-div-images {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.news-content {
+  display: flex;
+}
+
+.news-item {
+  margin-top: 25px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid lightgray;
+}
+
+.news-item:last-child {
+  border-bottom: 0px;
+}
+
+.news-heading {
+  display: block;
+  margin: 0px 0px 5px 8px;
+  color: green;
+}
+
+.news-date {
+  margin-left: 8px;
+  color: gray;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.news-item p {
+  font-size: 12px;
+  line-height: 20px;
+  margin: 10px 0px 8px 8px;
+  color: gray;
+  margin-left: 8px;
+}
+
+/* Media */
+
+#media-section {
+  background-image: url("/img/lifestyle_box_bg.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  margin-top: 0px;
+  padding: 8px 24px;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.media-div {
+  width: 45%;
+  box-sizing: border-box;
+  padding-left: 8px;
+  margin-left: 8px;
+}
+
+.media-thumbnails {
+  margin-top: 14px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.media-thumbnails img {
+  margin: 8px 15px 8px 0px;
+}
+
+.media-div p {
+  box-sizing: border-box;
+  width: 90%;
+  font-size: 12px;
+  line-height: 20px;
+  padding-left: 3px;
+  color: gray;
+  margin-left: 6px;
+  margin-top: 6px;
+}
+
+.media-div p a {
+  margin-left: 10px;
+  color: green;
+}
+
+@media screen and (max-width: 800px) {
+  #logo-container {
+    margin-left: 0px;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  #media-section,
+  #customer-news-section,
+  .lifestyle-subsection {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .media-div,
+  #news-div,
+  #customer-div,
+  .lifestyle-divison,
+  .lifestyle-divison:first-child {
+    width: 95%;
+    margin-top: 10px;
+  }
+
+  .lifestyle-divison:first-child p {
+    align-self: center;
+    margin-left: 10px;
+  }
+
+  .lifestyle-divison {
+    border-right: 0px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid lightgray;
+  }
+
+  .lifestyle-divison:last-child {
+    border-bottom: 0px;
+  }
+
+  .customer-div-images,
+  .media-thumbnails {
+    justify-content: center;
+  }
 }
