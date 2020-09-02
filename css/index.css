@@ -4,7 +4,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   padding: 0px;
-  background-image: url("/img/main_bg.jpg");
+  background-image: url("img/main_bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0px;
@@ -24,7 +24,7 @@ header {
   top: 0px;
   left: 0px;
   right: 0px;
-  background-image: url("/img/header_bg01.png");
+  background-image: url("img/header_bg01.png");
   background-size: cover;
   height: 100px;
   display: flex;
@@ -98,7 +98,7 @@ section {
 }
 
 #lifestyle {
-  background-image: url("/img/lifestyle_box_bg.jpg");
+  background-image: url("img/lifestyle_box_bg.jpg");
   background-size: contain;
 }
 
@@ -279,7 +279,7 @@ section {
 /* Media */
 
 #media-section {
-  background-image: url("/img/lifestyle_box_bg.jpg");
+  background-image: url("img/lifestyle_box_bg.jpg");
   background-size: contain;
   display: flex;
   margin-top: -1px;
@@ -330,7 +330,7 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
-  background-image: url("/img/footer_bg.jpg");
+  background-image: url("img/footer_bg.jpg");
   color: white;
   height: 100px;
 }

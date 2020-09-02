@@ -17,10 +17,10 @@ let thumbName = "video";
 let thumbId = 1;
 
 let photosArray = [
-  "/img/full-photo.png",
-  "/img/full-photo2.jpeg",
-  "/img/full-photo3.jpg",
-  "/img/full-photo4.jpeg",
+  "img/full-photo.png",
+  "img/full-photo2.jpeg",
+  "img/full-photo3.jpg",
+  "img/full-photo4.jpeg",
 ];
 
 let videosArray = [
