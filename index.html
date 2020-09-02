@@ -172,10 +172,10 @@
                 <div class="media-div">
                     <h3 class="section-heading">MEDIA RESOURCES - PHOTOS</h3>
                     <div class="media-thumbnails">
-                        <img src="/img/photo-thumbnail.png" alt="photo">
-                        <img src="/img/photo-thumbnail.png" alt="photo">
-                        <img src="/img/photo-thumbnail.png" alt="photo">
-                        <img src="/img/photo-thumbnail.png" alt="photo">
+                        <img data-photo-id="0" class="image-thumb" src="/img/photo-thumbnail.png" alt="photo">
+                        <img data-photo-id="1" class="image-thumb" src="/img/photo-thumbnail.png" alt="photo">
+                        <img data-photo-id="2" class="image-thumb" src="/img/photo-thumbnail.png" alt="photo">
+                        <img data-photo-id="3" class="image-thumb" src="/img/photo-thumbnail.png" alt="photo">
 
                     </div>
                     <p>
@@ -188,10 +188,10 @@
                 <div class="media-div">
                     <h3 class="section-heading">MEDIA RESOURCES - VIDEOS</h3>
                     <div class="media-thumbnails">
-                        <img src="/img/video-thumbnail.png" alt="photo">
-                        <img src="/img/video-thumbnail.png" alt="photo">
-                        <img src="/img/video-thumbnail.png" alt="photo">
-                        <img src="/img/video-thumbnail.png" alt="photo">
+                        <img data-video-id="0" class="video-thumb" src="/img/video-thumbnail.png" alt="photo">
+                        <img data-video-id="1" class="video-thumb" src="/img/video-thumbnail.png" alt="photo">
+                        <img data-video-id="2" class="video-thumb" src="/img/video-thumbnail.png" alt="photo">
+                        <img data-video-id="3" class="video-thumb" src="/img/video-thumbnail.png" alt="photo">
 
                     </div>
                     <p>
@@ -205,12 +205,17 @@
         </main>
 
 
-        <aside class="modal">
-            <img src="/img/prev.png" alt="previous">
+        <aside id="modal" class="modal">
+            <div class="modal-overlay"></div>
+            <img id="modal-prev" class="modal-nav" src="/img/prev.png" alt="previous">
             <div class="modal-content">
-
+                <img id="modal-close" class="close" src="/img/close.png" alt="close">
+                <div class="modal-content-container">
+                    <h4>THE TITLE FOR IMAGE</h4>
+                    <img src="/img/full-photo.png" alt="image">
+                </div>
             </div>
-            <img src="/img/next.png" alt="previous">
+            <img id="modal-next" class="modal-nav" src="/img/next.png" alt="previous">
         </aside>
 
 
@@ -238,6 +243,7 @@
     </header>
 
 
+    <script src="/js/modal.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="/js/index.js"></script>
 </body>

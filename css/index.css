@@ -358,6 +358,59 @@ footer span {
   width: 28%;
 }
 
+/* Modal */
+
+.modal {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  z-index: 3;
+  position: fixed;
+}
+
+.modal-overlay {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  opacity: 0.7;
+}
+
+.modal-content {
+  background-color: white;
+  position: relative;
+  padding: 10px;
+  margin: 55px;
+  z-index: 4;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.modal-content-container img {
+  max-width: 630px;
+}
+
+.modal-content h4 {
+  margin: 6px 0px;
+  color: green;
+  font-weight: 100;
+  font-size: 15px;
+}
+
+.modal-nav {
+  opacity: 0.7;
+}
+
+.close {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+
 @media screen and (max-width: 800px) {
   #logo-container {
     margin-left: 0px;
