@@ -13,6 +13,9 @@ let modalConentContainer = document.getElementsByClassName(
 let nextModalBtn = document.getElementById("modal-next");
 let prevModalBtn = document.getElementById("modal-prev");
 
+let menu = document.getElementById("menu");
+let navDiv = document.getElementById("nav-div-res");
+
 let slider = tns({
   mode: "gallery",
   autoplay: true,
@@ -142,5 +145,14 @@ prevModalBtn.onclick = function () {
     <iframe width="420" height="315"
       src="${videosArray[thumbId]}">
     </iframe>`;
+  }
+};
+
+navDiv.style.right = "-100vw";
+menu.onclick = function () {
+  if (navDiv.style.right == "-100vw") {
+    navDiv.style.right = "0px";
+  } else if (navDiv.style.right == "0px") {
+    navDiv.style.right = "-100vw";
   }
 };

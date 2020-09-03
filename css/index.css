@@ -35,6 +35,38 @@ header {
   z-index: 2;
 }
 
+.navbar-res {
+  transition: 0.3s all ease-in-out;
+  position: fixed;
+  top: 0;
+  right: -100vw;
+  width: 20vw;
+  height: 100vh;
+  background-color: black;
+  opacity: 0.9;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar-res .nav-list {
+  width: 100%;
+  margin-right: 30px;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+#menu {
+  display: none;
+  cursor: pointer;
+  border: 2px solid gray;
+  position: fixed;
+  top: 28px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  z-index: 5;
+}
+
 #logo-container {
   margin-left: 139px;
 }
@@ -79,6 +111,10 @@ main {
   position: absolute;
   bottom: 9px;
   right: 7px;
+}
+
+.slider-controls img {
+  cursor: pointer;
 }
 
 .slider-item {
@@ -142,6 +178,7 @@ section {
 #lifestyle {
   background-image: url("../img/lifestyle_box_bg.jpg");
   background-size: contain;
+  padding-bottom: 10px;
 }
 
 .section-heading {
@@ -176,6 +213,7 @@ section {
   line-height: 18px;
   word-spacing: 0.2px;
   color: gray;
+  margin-bottom: 10px;
 }
 
 .lifestyle-divison {
@@ -223,7 +261,7 @@ section {
 
 .block-heading {
   color: green;
-  margin: 4px 0px 10px 8px;
+  margin: 8px 0px 10px 6px;
   font-size: 15px;
 }
 
@@ -232,10 +270,11 @@ section {
 }
 
 .learn-more-btn {
+  cursor: pointer;
   font-size: 12px;
   font-weight: 600;
   margin-top: auto;
-  margin-bottom: 8px;
+  margin-bottom: 18px;
   width: 65%;
   text-align: start;
   padding: 8px 6px 6px 15px;
@@ -253,7 +292,7 @@ section {
 /* Customer news section */
 
 #customer-news-section {
-  margin-top: 5px;
+  margin-top: 2px;
   margin-left: -3px;
   display: flex;
   justify-content: space-between;
@@ -329,27 +368,31 @@ section {
   background-image: url("../img/lifestyle_box_bg.jpg");
   background-size: contain;
   display: flex;
-  margin-top: -1px;
+  margin-top: 2px;
   padding: 6px 24px;
   justify-content: space-between;
   box-sizing: border-box;
 }
 
 .media-div {
-  width: 45%;
+  width: 48%;
   box-sizing: border-box;
   padding-left: 8px;
   margin-left: 8px;
 }
 
 .media-thumbnails {
-  margin-top: 14px;
+  margin-top: 22px;
+  margin-left: 9px;
   display: flex;
   flex-wrap: wrap;
 }
 
 .media-thumbnails img {
-  margin: 8px 15px 8px 0px;
+  cursor: pointer;
+  margin: 8px 24px 25px 0px;
+  width: 170px;
+  height: 100px;
 }
 
 .media-div p {
@@ -358,9 +401,9 @@ section {
   font-size: 12px;
   line-height: 20px;
   padding-left: 3px;
-  color: gray;
+  color: rgb(190, 174, 174);
   margin-left: 6px;
-  margin-top: 6px;
+  margin-top: 1px;
 }
 
 .media-div p a {
@@ -368,12 +411,16 @@ section {
   color: green;
 }
 
+#media-video {
+  margin-left: 82px;
+}
+
 /* Footer */
 
 footer {
   justify-self: flex-end;
   width: 100%;
-  margin-top: 29px;
+  margin-top: 25px;
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
@@ -450,7 +497,7 @@ footer span {
 }
 
 .modal-content-container iframe {
-  max-width: 300px;
+  max-width: 500px;
 }
 
 .modal-content h4 {
@@ -461,10 +508,12 @@ footer span {
 }
 
 .modal-nav {
+  cursor: pointer;
   opacity: 0.7;
 }
 
 .close {
+  cursor: pointer;
   position: absolute;
   top: -10px;
   right: -10px;
@@ -507,6 +556,18 @@ footer span {
 
   .nav-list {
     display: none;
+  }
+
+  #menu {
+    display: block;
+  }
+
+  .navbar-res {
+    width: 25vw;
+  }
+
+  .navbar-res .nav-list {
+    display: flex;
   }
 
   #media-section,
@@ -575,6 +636,7 @@ footer span {
     text-align: center;
     margin: 0px;
     width: 90%;
+    margin-bottom: 10px;
   }
 
   .modal-content {
@@ -594,6 +656,10 @@ footer span {
   #parent-slider {
     margin-top: 90px;
     width: 90%;
+  }
+
+  .navbar-res {
+    width: 40vw;
   }
 
   .slider-div {
@@ -631,6 +697,10 @@ footer span {
 @media screen and (max-width: 460px) {
   #logo-container img {
     width: 80%;
+  }
+
+  .navbar-res {
+    width: 80vw;
   }
 
   .slider-div {
