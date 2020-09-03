@@ -554,6 +554,10 @@ footer span {
     margin-left: 0px;
   }
 
+  #media-video {
+    margin-left: 0px;
+  }
+
   .nav-list {
     display: none;
   }
