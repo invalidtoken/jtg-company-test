@@ -13,6 +13,36 @@ let modalConentContainer = document.getElementsByClassName(
 let nextModalBtn = document.getElementById("modal-next");
 let prevModalBtn = document.getElementById("modal-prev");
 
+let slider = tns({
+  mode: "gallery",
+  autoplay: true,
+  controls: false,
+  nav: true,
+  autoplayTimeout: 3000,
+  autoplayButtonOutput: false,
+  navContainer: ".slider-controls",
+  navAsThumbnails: true,
+  startIndex: 0,
+});
+
+let onSlideChange = function (info, eventName) {
+  if (info.displayIndex === 1) {
+    controlSlider1.innerHTML = `<img src="img/button-act.png" alt="btn-act">`;
+    controlSlider2.innerHTML = `<img src="img/button.png" alt="btn">`;
+    controlSlider3.innerHTML = `<img src="img/button.png" alt="btn">`;
+  } else if (info.displayIndex === 2) {
+    controlSlider1.innerHTML = `<img src="img/button.png" alt="btn">`;
+    controlSlider2.innerHTML = `<img src="img/button-act.png" alt="btn-act">`;
+    controlSlider3.innerHTML = `<img src="img/button.png" alt="btn">`;
+  } else if (info.displayIndex === 3) {
+    controlSlider1.innerHTML = `<img src="img/button.png" alt="btn">`;
+    controlSlider2.innerHTML = `<img src="img/button.png" alt="btn">`;
+    controlSlider3.innerHTML = `<img src="img/button-act.png" alt="btn-act">`;
+  }
+};
+
+slider.events.on("indexChanged", onSlideChange);
+
 let thumbName = "video";
 let thumbId = 1;
 
@@ -36,36 +66,6 @@ function closeModal() {
 
 modalClose.onclick = closeModal;
 modalOverlay.onclick = closeModal;
-
-let slider = tns({
-  mode: "gallery",
-  autoplay: true,
-  controls: false,
-  nav: true,
-  autoplayTimeout: 3000,
-  autoplayButtonOutput: false,
-  navContainer: ".slider-controls",
-  navAsThumbnails: true,
-  startIndex: 0,
-});
-
-let onSlideChange = function (info, eventName) {
-  if (info.displayIndex === 1) {
-    controlSlider1.innerHTML = `<img src="/img/button-act.png" alt="btn-act">`;
-    controlSlider2.innerHTML = `<img src="/img/button.png" alt="btn">`;
-    controlSlider3.innerHTML = `<img src="/img/button.png" alt="btn">`;
-  } else if (info.displayIndex === 2) {
-    controlSlider1.innerHTML = `<img src="/img/button.png" alt="btn">`;
-    controlSlider2.innerHTML = `<img src="/img/button-act.png" alt="btn-act">`;
-    controlSlider3.innerHTML = `<img src="/img/button.png" alt="btn">`;
-  } else if (info.displayIndex === 3) {
-    controlSlider1.innerHTML = `<img src="/img/button.png" alt="btn">`;
-    controlSlider2.innerHTML = `<img src="/img/button.png" alt="btn">`;
-    controlSlider3.innerHTML = `<img src="/img/button-act.png" alt="btn-act">`;
-  }
-};
-
-slider.events.on("indexChanged", onSlideChange);
 
 for (const thumb of photoThumbs) {
   thumb.onclick = function () {
